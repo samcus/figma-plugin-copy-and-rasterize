@@ -1,0 +1,33 @@
+{
+  "name": "figma-plugin-copy-and-rasterize",
+  "version": "1.0.0",
+  "description": "A Figma plugin that allows users to quickly rasterize a high-res copy of a Figma frame/component/node.",
+  "keywords": ["figma plugin", "raster", "image", "rasterize"],
+  "main": "code.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "watch": "tsc -w -p tsconfig.json"
+  },
+  "author": {
+    "name": "Samuel Anthony Custer",
+    "email": "samuel.a.custer@gmail.com",
+    "url": "https://samuelcuster.com"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://www.paypal.com/paypalme/samuelcuster"
+  },
+  "bugs": {
+    "email": "samuel.a.custer@gmail.com",
+    "url": "https://github.com/samcus/figma-plugin-copy-and-rasterize/issues"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samcus/figma-plugin-copy-and-rasterize.git"
+  },
+  "devDependencies": {
+    "@figma/plugin-typings": "*",
+    "typescript": "*"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Copy & Rasterize",
+  "id": "1078810141981500791",
+  "api": "1.0.0",
+  "main": "code.js",
+  "editorType": [
+    "figma"
+  ],
+  "parameters": [
+    {
+      "name": "Image Scale Mode",
+      "key": "image-scale-mode",
+      "optional": true
+    }
+  ],
+  "relaunchButtons": [
+    {"command": "run", "name": "Copy & Rasterize"}
+  ]
+}
