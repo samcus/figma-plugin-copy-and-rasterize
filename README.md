@@ -22,7 +22,7 @@ npm install -g typescript
 ## Build Instructions
 ```sh 
 npm install
-# buil
+# build
 npm run build
 # 
 npm run watch
