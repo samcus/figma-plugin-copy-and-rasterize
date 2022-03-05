@@ -1,5 +1,5 @@
 # Figma Copy & Rasterize Plugin
-A Figma plugin that allows users to quickly rasterize a high-res copy of a Figma frame/component/node.
+A Figma plugin that allows users to quickly rasterize a high-res copy of a Figma group, frame, component, or node.
 
 ## Installation & Setup Instructions
 
