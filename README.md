@@ -28,5 +28,5 @@ npm run build
 npm run watch
 ```
 
-## Deployment
+## Deployment Instructions
 You can deploy and publish Figma plugins in the Figma UI (manage plugins).
