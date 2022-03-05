@@ -24,7 +24,7 @@ npm install -g typescript
 npm install
 # build
 npm run build
-# 
+# watch for changes and build automatically on each save
 npm run watch
 ```
 
