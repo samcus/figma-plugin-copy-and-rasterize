@@ -37,13 +37,7 @@ figma.on('run', ({ parameters }: RunEvent) => {
   for (const node of figma.currentPage.selection) {
     // Check Parameters to Support Relaunch Mode
     let imageScaleMode: ImagePaint["scaleMode"];
-    if (parameters !== undefined) {
-      imageScaleMode = parameters["image-scale-mode"] || node.getPluginData('image-scale-mode') || defaults.scaleMode;
-    } else {
-      // @ts-ignore
-      imageScaleMode = node.getPluginData('image-scale-mode') || defaults.scaleMode;
-    }
-
+    imageScaleMode = parameters && parameters["image-scale-mode"] || node.getPluginData('image-scale-mode') || defaults.scaleMode;
     let nodeWidth = node.width;
     let nodeHeight = node.height;
     let imageConstraintMode: ExportSettingsConstraints['type'] = 'SCALE'
