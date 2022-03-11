@@ -44,20 +44,11 @@ figma.on('run', ({ parameters }: RunEvent) => {
     let exceedsMaxImageSize = false;
     // Identify larger dimension (width vs height)
     let nodeLargerDimension: ExportSettingsConstraints['type'] = nodeWidth > nodeHeight ? 'WIDTH': 'HEIGHT';
-    // check if the larger dimension when scaled exceeds image size limit
-    // if so, restrict greater dimension to 4096
-    if (nodeLargerDimension == 'WIDTH') {
-      if (node.width * defaults.scaleSize > defaults.maxImageDimensionSize) {
-        exceedsMaxImageSize = true;
-        imageConstraintMode = nodeLargerDimension;
-      }
-    } else {
-      if (node.height * defaults.scaleSize > defaults.maxImageDimensionSize) {
-        exceedsMaxImageSize = true;
-        imageConstraintMode = nodeLargerDimension;
-      }
+    // if the larger dimension when scaled exceeds image size limit, restrict greater dimension to 4096
+    if (Math.max(nodeWidth, nodeHeight) * defaults.scaleSize > defaults.maxImageDimensionSize) {
+      exceedsMaxImageSize = true;
+      imageConstraintMode = nodeLargerDimension;
     }
-    
     // Create Image Version of the Node
     async function createImageOfNode() {
       let exportOfImage = await node.exportAsync({
