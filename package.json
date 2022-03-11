@@ -1,6 +1,6 @@
 {
   "name": "figma-plugin-copy-and-rasterize",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Figma plugin that allows users to quickly rasterize a high-res copy of a Figma group, frame, component, or node.",
   "keywords": ["figma plugin", "raster", "image", "rasterize"],
   "homepage": "https://www.figma.com/community/plugin/1078810141981500791",
